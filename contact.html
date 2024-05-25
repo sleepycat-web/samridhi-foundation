@@ -14,20 +14,24 @@
  
     <!-- header -->
     <header class="text-gray-600 body-font">
-      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <img src="img/logoorg.png" alt="Logo" class="w-12 h-12">
-          <span class="ml-3 text-xl">Tailblocks</span>
-        </a>
-        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
-            <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
-            <a class="mr-5 hover:text-gray-900" href="gallery.html">Gallery</a>
-            <a class="mr-5 hover:text-gray-900" href="contact.html">Contact Us</a>
-          
-        </nav>
-      </div>
-    </header>
+  <div class="container1 mx-auto flex flex-wrap p-5 items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 md:mb-0">
+      <img src="img/logoorg.png" alt="Logo" class="w-12 h-12">
+      <span class="ml-3 text-xl">Samridhi Foundation</span>
+    </a>
+    <button class="mobile-menu-button md:hidden block">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+    <nav class="md:ml-auto flex-wrap items-center text-base justify-center mobile-menu hidden md:flex">
+      <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+      <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+      <a class="mr-5 hover:text-gray-900" href="gallery.html">Gallery</a>
+      <a class="mr-5 hover:text-gray-900" href="contact.html">Contact Us</a>
+    </nav>
+  </div>
+</header>
  
  
   <!-- contact -->
@@ -233,7 +237,47 @@
   </footer>
 
 
-  
+  <style>
+ .mobile-menu-button {
+  display: none;
+}
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile-menu-button {
+    display: block;
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1rem; /* Adds space to avoid overlap */
+  }
+  .mobile-menu.open {
+    display: flex;
+  }
+  .mobile-menu a {
+    text-align: left;
+    padding-left: 1rem; /* Ensures left alignment and spacing */
+    padding-top: 0.5rem; /* Adds space between menu items */
+    padding-bottom: 0.5rem; /* Adds space between menu items */
+  }
+}
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuButton = document.querySelector('.mobile-menu-button');
+      const mobileMenu = document.querySelector('.mobile-menu');
+
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+      });
+    });
+</script>
 </body>
 
 </html>

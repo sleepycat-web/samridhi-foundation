@@ -1,493 +1,867 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="src/output.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-
-</head>
-
-<body>
-
-  <!-- header -->
-<header class="text-gray-600 body-font">
-  <div class="container1 mx-auto flex flex-wrap p-5 items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 md:mb-0">
-      <img src="img/logoorg.png" alt="Logo" class="w-12 h-12">
-      <span class="ml-3 text-xl">Samridhi Foundation</span>
-    </a>
-    <button class="mobile-menu-button md:hidden block">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-    <nav class="md:ml-auto flex-wrap items-center text-base justify-center mobile-menu hidden md:flex">
-      <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
-      <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
-      <a class="mr-5 hover:text-gray-900" href="gallery.html">Gallery</a>
-      <a class="mr-5 hover:text-gray-900" href="contact.html">Contact Us</a>
-    </nav>
-  </div>
-</header>
-
-  
-
-
-  <!-- hero -->
-  <section class="text-gray-600 body-font">
-    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-      <div
-        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Empowering Communities,
-          <br class="hidden lg:inline-block">Building a Brighter Future
-        </h1>
-        <p class="mb-8 leading-relaxed">Samridhi Foundation is dedicated to uplifting communities, fostering
-          empowerment, and creating lasting change. Together, we can build a future where everyone has the opportunity
-          to thrive.</p>
-        <div class="flex justify-center">
-          <a href="contact.html"
-            class="inline-flex text-white bg-emerald-500 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 rounded text-lg">Contact
-            Us</a>
-          <button
-            class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
-            onclick="scrollToSection('newsletterid')">Newsletter</button>
-        </div>
-      </div>
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 transform scale-105">
-        <img class="object-cover object-center rounded" alt="hero" src="img/heroimg.jpg">
-      </div>
-    </div>
-  </section>
-  <br>
-
-  <!-- statistics -->
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Impact</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">At Samridhi Foundation, each step creates a profound and
-          lasting impact. Through dedicated efforts in education, healthcare, and community initiatives, we are
-          transforming lives and inspiring change one action at a time.</p>
-      </div>
-      <div class="flex flex-wrap -m-4 text-center">
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" class="text-emerald-500 w-12 h-12 mb-3 inline-block">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-            </svg>
-
-            <h2 class="title-font font-medium text-3xl text-gray-900">2000+</h2>
-            <p class="leading-relaxed">Villages and Slums reached out to across India</p>
-          </div>
-        </div>
-
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              class="text-emerald-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-            </svg>
-
-
-            <h2 class="title-font font-medium text-3xl text-gray-900">10L+</h2>
-            <p class="leading-relaxed">Children and their families are impacted every year</p>
-          </div>
-        </div>
-
-
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="text-emerald-500 w-12 h-12 mb-3 inline-block"
-              viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M21.0082 3C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082ZM20 5H4V19H20V5ZM18 15V17H6V15H18ZM12 7V13H6V7H12ZM18 11V13H14V11H18ZM10 9H8V11H10V9ZM18 7V9H14V7H18Z">
-              </path>
-            </svg>
-
-            <h2 class="title-font font-medium text-3xl text-gray-900">400+</h2>
-            <p class="leading-relaxed">Projects focused on education, healthcare and women empowerment</p>
-          </div>
-        </div>
-
-
-        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="text-emerald-500 w-12 h-12 mb-3 inline-block"
-              viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
-              <path
-                d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995ZM12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13ZM12 15C9.79086 15 8 13.2091 8 11C8 8.79086 9.79086 7 12 7C14.2091 7 16 8.79086 16 11C16 13.2091 14.2091 15 12 15Z">
-              </path>
-            </svg>
-            <h2 class="title-font font-medium text-3xl text-gray-900">25+</h2>
-            <p class="leading-relaxed">States are reached out to including the remotest areas</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- programmes -->
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Programmes</h1>
-        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Samridhi Foundation is dedicated to creating positive
-          change through our diverse programmes. Each initiative is designed to address critical needs and empower
-          communities for sustainable development.</p>
-      </div>
-      <div class="flex flex-wrap -m-4">
-        <div class="xl:w-1/3 md:w-1/2 p-4">
-          <div class="border border-gray-200 p-6 rounded-lg">
-            <div
-              class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-emerald-100 text-emerald-500 mb-4">
-
-          
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M20 22H6.5C4.567 22 3 20.433 3 18.5V5C3 3.34315 4.34315 2 6 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V17H6.5C5.67157 17 5 17.6716 5 18.5C5 19.3284 5.67157 20 6.5 20H19Z"></path></svg>
-
-
-
-            </div>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Education</h2>
-            <p class="leading-relaxed text-base">Nurturing children's education, nutrition, and holistic development.
-            </p>
-          </div>
-        </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4">
-          <div class="border border-gray-200 p-6 rounded-lg">
-            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-cyan-100 text-cyan-500 mb-4 mx-auto">
-              <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-              <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M16.5 3C19.5376 3 22 5.5 22 9C22 16 14.5 20 12 21.5C10.0224 20.3135 4.91625 17.5626 2.8685 13L7.56619 13L8.5 11.4437L11.5 16.4437L13.5662 13H17V11H12.4338L11.5 12.5563L8.5 7.55635L6.43381 11L2.21024 10.9999C2.07418 10.3626 2 9.69615 2 9C2 5.5 4.5 3 7.5 3C9.35997 3 11 4 12 5C13 4 14.64 3 16.5 3Z">
-                  
-                </path></svg>     
-            </div>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Healthcare</h2>
-            <p class="leading-relaxed text-base">Bringing essential healthcare directly to remote communities'
-              doorsteps.</p>
-            </div>
-          </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4">
-          <div class="border border-gray-200 p-6 rounded-lg">
-            <div
-              class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-fuchsia-100 text-fuchsia-500 mb-4">
-
-             
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor"><path d="M11 15.9339C7.33064 15.445 4.5 12.3031 4.5 8.5C4.5 4.35786 7.85786 1 12 1C16.1421 1 19.5 4.35786 19.5 8.5C19.5 12.3031 16.6694 15.445 13 15.9339V18H18V20H13V24H11V20H6V18H11V15.9339ZM12 14C15.0376 14 17.5 11.5376 17.5 8.5C17.5 5.46243 15.0376 3 12 3C8.96243 3 6.5 5.46243 6.5 8.5C6.5 11.5376 8.96243 14 12 14Z"></path></svg>
-
-            </div>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Women Empowerment</h2>
-            <p class="leading-relaxed text-base">Empowering girls and women through community engagement.</p>
-          </div>
-        </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4">
-          <div class="border border-gray-200 p-6 rounded-lg">
-            <div
-              class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-stone-100 text-stone-500 mb-4">
-
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor"><path d="M7 5V2C7 1.44772 7.44772 1 8 1H16C16.5523 1 17 1.44772 17 2V5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V6C2 5.44772 2.44772 5 3 5H7ZM4 15V19H20V15H4ZM11 11V13H13V11H11ZM9 3V5H15V3H9Z"></path></svg>
-            </div>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Livelihood</h2>
-            <p class="leading-relaxed text-base">Providing in-demand skill training and job support opportunities for
-              youth.</p>
-          </div>
-        </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4">
-          <div class="border border-gray-200 p-6 rounded-lg">
-            <div
-              class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6"  fill="currentColor"><path d="M1.51587 7.87678C1.67997 9.82977 3.0892 11.452 5.00006 11.8875V19.0013H3.00006V21.0013H21.0001V19.0013H19.0001V11.8875C20.9109 11.452 22.3202 9.82977 22.4842 7.87678C21.9938 7.95878 21.4973 8 21.0001 8C17.186 8 13.7861 5.59592 12.5148 2H11.4853C10.214 5.59592 6.81411 8 3.00006 8C2.50278 8 2.00635 7.95878 1.51587 7.87678ZM17.0001 19.0013H7.00006V12H17.0001V19.0013Z"></path></svg>
-            </div>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Empowering Grassroots</h2>
-            <p class="leading-relaxed text-base">Supporting community organizations to achieve sustainability.</p>
-          </div>
-        </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4">
-          <div class="border border-gray-200 p-6 rounded-lg">
-            <div
-              class="w-10 h-10 inline-flex items-center justify-center rounded-full  bg-red-100 text-red-500  mb-4" >
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M11.8611 2.39057C12.8495 1.73163 14.1336 1.71797 15.1358 2.35573L19.291 4.99994H20.9998C21.5521 4.99994 21.9998 5.44766 21.9998 5.99994V14.9999C21.9998 15.5522 21.5521 15.9999 20.9998 15.9999H19.4801C19.5396 16.9472 19.0933 17.9102 18.1955 18.4489L13.1021 21.505C12.4591 21.8907 11.6609 21.8817 11.0314 21.4974C10.3311 22.1167 9.2531 22.1849 8.47104 21.5704L3.33028 17.5312C2.56387 16.9291 2.37006 15.9003 2.76579 15.0847C2.28248 14.7057 2 14.1254 2 13.5109V6C2 5.44772 2.44772 5 3 5H7.94693L11.8611 2.39057ZM4.17264 13.6452L4.86467 13.0397C6.09488 11.9632 7.96042 12.0698 9.06001 13.2794L11.7622 16.2518C12.6317 17.2083 12.7903 18.6135 12.1579 19.739L17.1665 16.7339C17.4479 16.5651 17.5497 16.2276 17.4448 15.9433L13.0177 9.74551C12.769 9.39736 12.3264 9.24598 11.9166 9.36892L9.43135 10.1145C8.37425 10.4316 7.22838 10.1427 6.44799 9.36235L6.15522 9.06958C5.58721 8.50157 5.44032 7.69318 5.67935 7H4V13.5109L4.17264 13.6452ZM14.0621 4.04306C13.728 3.83047 13.3 3.83502 12.9705 4.05467L7.56943 7.65537L7.8622 7.94814C8.12233 8.20827 8.50429 8.30456 8.85666 8.19885L11.3419 7.45327C12.5713 7.08445 13.8992 7.53859 14.6452 8.58303L18.5144 13.9999H19.9998V6.99994H19.291C18.9106 6.99994 18.5381 6.89148 18.2172 6.68727L14.0621 4.04306ZM6.18168 14.5448L4.56593 15.9586L9.70669 19.9978L10.4106 18.7659C10.6256 18.3897 10.5738 17.9178 10.2823 17.5971L7.58013 14.6247C7.2136 14.2215 6.59175 14.186 6.18168 14.5448Z"></path></svg>
-            </div>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Disaster Response</h2>
-            <p class="leading-relaxed text-base">Coordinating rapid response and recovery efforts for disaster victims.
-            </p>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-
-  <!-- images -->
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex w-full mb-20 flex-wrap">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">The Visual Narrative
-          of Our Mission</h1>
-        <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Explore the transformative work of Samridhi
-          Foundation. Our photos capture moments of change, hope, and progress from our community events and outreach
-          programs. Each image tells a unique story of individuals and communities coming together to make a difference.
-          Witness the smiles, hard work, and positive outcomes that define our mission of empowerment and
-          transformation.</p>
-      </div>
-      <div class="flex flex-wrap -m-4">
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/600x360">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-emerald-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/601x361">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-emerald-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/603x363">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-emerald-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/602x362">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-emerald-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/605x365">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-emerald-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/606x366">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-emerald-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- cta -->
-  <section id="newsletterid" class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
-      <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-        <h1 class="title-font font-medium text-3xl text-gray-900">Stay Updated</h1>
-        <p class="leading-relaxed mt-4">Sign up for our newsletter to receive the latest news, updates, and stories from
-          Samridhi Foundation. Stay informed about our initiatives and how you can get involved.</p>
-      </div>
-      <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-        <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
-        <div class="relative mb-4">
-          <label for="full-name" class="leading-7 text-sm text-gray-600">Full Name</label>
-          <input type="text" id="full-name" name="full-name"
-            class="w-full bg-white rounded border border-gray-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-        </div>
-        <div class="relative mb-4">
-          <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-          <input type="email" id="email" name="email"
-            class="w-full bg-white rounded border border-gray-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-        </div>
-        <button
-          class="text-white bg-emerald-500 border-0 py-2 px-8 focus:outline-none hover:bg-emerald-600 rounded text-lg">Submit</button>
-        <p class="text-xs text-gray-500 mt-3">Be the change. Get involved with Samridhi Foundation.</p>
-      </div>
-    </div>
-  </section>
-
-
-
-
-<!-- footer -->
-<footer class="text-gray-600 body-font">
-  <div
-    class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <img src="img/logoorg.png" alt="Logo" class="w-12 h-12">
-        <span class="ml-3 text-xl">Samridhi Foundation</span>
-      </a>
-      <p class="mt-2 text-sm text-gray-500">Empowering Communities, <br>
-        Building a Brighter Future</p>
-    </div>
-    <div class="flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-left">
-      <div class="lg:w-1/3 md:w-1/2 w-1/2 px-4 text-left">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">NAVIGATION</h2>
-        <nav class="list-none mb-10">
-          <li><a class="text-gray-600 hover:text-gray-800" href="index.html">Home</a></li>
-          <li><a class="text-gray-600 hover:text-gray-800" href="about.html">About</a></li>
-          <li><a class="text-gray-600 hover:text-gray-800" href="gallery.html">Gallery</a></li>
-          <li><a class="text-gray-600 hover:text-gray-800" href="contact.html">Contact Us</a></li>
-          <li><a class="text-gray-600 hover:text-gray-800" href="#">Privacy Policy</a></li>
-        </nav>
-      </div>
-      <div class="lg:w-1/3 md:w-1/2 w-1/2 px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">OUR WORK</h2>
-        <nav class="list-none mb-10">
-          <li><a class="text-gray-600 hover:text-gray-800">Education</a></li>
-          <li><a class="text-gray-600 hover:text-gray-800">Health</a></li>
-          <li><a class="text-gray-600 hover:text-gray-800">Livelihood</a></li>
-                    <li><a class="text-gray-600 hover:text-gray-800">Disaster Response</a></li>
-
-          <li><a class="text-gray-600 hover:text-gray-800">Women Empowerment</a></li>
-        </nav>
-      </div>
-      <div class="lg:w-1/3 md:w-1/2 w-1/2 px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">GET INVOLVED</h2>
-        <nav class="list-none mb-10">
-                    <li><a class="text-gray-600 hover:text-gray-800" href="#">Volunteer</a></li>
-          <li><a class="text-gray-600 hover:text-gray-800" href="#">Careers</a></li>
-
-          <li><a class="text-gray-600 hover:text-gray-800" href="#">Individual Support</a></li>
-          <li><a class="text-gray-600 hover:text-gray-800" href="#">Corporate Partnerships</a></li>
-          <li><a class="text-gray-600 hover:text-gray-800" href="#">School Partnerships</a></li>
-        </nav>
-      </div>
-    </div>
-
-  </div>
-
-
-
-  <div class="bg-gray-100">
-    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row justify-center">
-      <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 Samridhi Foundation</p>
-      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-center">
-        <a class=" ml-3 text-gray-500" href="#">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6"
-            viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-          </svg>
+  <body>
+    <!-- header -->
+    <header class="text-gray-600 body-font">
+      <div class="container1 mx-auto flex flex-wrap p-5 items-center">
+        <a
+          class="flex title-font font-medium items-center text-gray-900 md:mb-0"
+        >
+          <img src="img/logoorg.png" alt="Logo" class="w-12 h-12" />
+          <span class="ml-3 text-xl">Samridhi Foundation</span>
         </a>
-        <a class="ml-3 text-gray-500" href="#">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            class="w-6 h-6 viewBox="0 0 24 24">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-          </svg>
-        </a>
-        <a class="ml-3 text-gray-500" href="#">
-        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6"
-          viewBox="0 0 24 24">
-          <path
-            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-          </path>
-        </svg>
-        </a>
-        <a class="ml-3 text-gray-500" href="#">
-          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
-            class="w-6 h-6 viewBox="0 0 24 24">
-            <path stroke="none"
-              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-            <circle cx="4" cy="4" r="2" stroke="none"></circle>
-          </svg>
-        </a>
-        <a class="ml-3 text-gray-500" href="#">
-          <svg class="w-6 h-6 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
+        <button class="mobile-menu-button md:hidden block">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             <path
-              d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
-            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
           </svg>
-        </a>
+        </button>
+        <nav
+          class="md:ml-auto flex-wrap items-center text-base justify-center mobile-menu hidden md:flex"
+        >
+          <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+          <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+          <a class="mr-5 hover:text-gray-900" href="gallery.html">Gallery</a>
+          <a class="mr-5 hover:text-gray-900" href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </header>
 
-      </span>
+    <!-- hero -->
+    <section class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+          >
+            Empowering Communities,
+            <br class="hidden lg:inline-block" />Building a Brighter Future
+          </h1>
+          <p class="mb-8 leading-relaxed">
+            Samridhi Foundation is dedicated to uplifting communities, fostering
+            empowerment, and creating lasting change. Together, we can build a
+            future where everyone has the opportunity to thrive.
+          </p>
+          <div class="flex justify-center">
+            <a
+              href="contact.html"
+              class="inline-flex text-white bg-emerald-500 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 rounded text-lg"
+              >Contact Us</a
+            >
+            <button
+              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+              onclick="scrollToSection('newsletterid')"
+            >
+              Newsletter
+            </button>
+          </div>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 transform scale-105">
+          <img
+            class="object-cover object-center rounded"
+            alt="hero"
+            src="img/heroimg.jpg"
+          />
+        </div>
+      </div>
+    </section>
+    <br />
 
-    </div>
-  </div>
-</footer>
-</body>
+    <!-- statistics -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+          >
+            Our Impact
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            At Samridhi Foundation, each step creates a profound and lasting
+            impact. Through dedicated efforts in education, healthcare, and
+            community initiatives, we are transforming lives and inspiring
+            change one action at a time.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4 text-center">
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="text-emerald-500 w-12 h-12 mb-3 inline-block"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                />
+              </svg>
 
-<style>
-  .mobile-menu-button {
-  display: none;
-}
-@media (max-width: 768px) {
-  .container1 {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .mobile-menu-button {
-    display: block;
-  }
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    padding-top: 1rem; /* Adds space to avoid overlap */
-  }
-  .mobile-menu.open {
-    display: flex;
-  }
-  .mobile-menu a {
-    text-align: left;
-    padding-left: 1rem; /* Ensures left alignment and spacing */
-    padding-top: 0.5rem; /* Adds space between menu items */
-    padding-bottom: 0.5rem; /* Adds space between menu items */
-  }
-}
-</style>
+              <h2 class="title-font font-medium text-3xl text-gray-900">
+                2000+
+              </h2>
+              <p class="leading-relaxed">
+                Villages and Slums reached out to across India
+              </p>
+            </div>
+          </div>
 
-<script>
-  function scrollToSection(id) {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-  }
-    document.addEventListener('DOMContentLoaded', function() {
-      const mobileMenuButton = document.querySelector('.mobile-menu-button');
-      const mobileMenu = document.querySelector('.mobile-menu');
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="text-emerald-500 w-12 h-12 mb-3 inline-block"
+                viewBox="0 0 24 24"
+              >
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+              </svg>
 
-      mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('open');
+              <h2 class="title-font font-medium text-3xl text-gray-900">
+                10L+
+              </h2>
+              <p class="leading-relaxed">
+                Children and their families are impacted every year
+              </p>
+            </div>
+          </div>
+
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="text-emerald-500 w-12 h-12 mb-3 inline-block"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M21.0082 3C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082ZM20 5H4V19H20V5ZM18 15V17H6V15H18ZM12 7V13H6V7H12ZM18 11V13H14V11H18ZM10 9H8V11H10V9ZM18 7V9H14V7H18Z"
+                ></path>
+              </svg>
+
+              <h2 class="title-font font-medium text-3xl text-gray-900">
+                400+
+              </h2>
+              <p class="leading-relaxed">
+                Projects focused on education, healthcare and women empowerment
+              </p>
+            </div>
+          </div>
+
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="text-emerald-500 w-12 h-12 mb-3 inline-block"
+                viewBox="0 0 24 24"
+                width="12"
+                height="12"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995ZM12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13ZM12 15C9.79086 15 8 13.2091 8 11C8 8.79086 9.79086 7 12 7C14.2091 7 16 8.79086 16 11C16 13.2091 14.2091 15 12 15Z"
+                ></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-gray-900">25+</h2>
+              <p class="leading-relaxed">
+                States are reached out to including the remotest areas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- programmes -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div
+          class="flex flex-wrap w-full mb-20 flex-col items-center text-center"
+        >
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+          >
+            Our Programmes
+          </h1>
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+            Samridhi Foundation is dedicated to creating positive change through
+            our diverse programmes. Each initiative is designed to address
+            critical needs and empower communities for sustainable development.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-emerald-100 text-emerald-500 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M20 22H6.5C4.567 22 3 20.433 3 18.5V5C3 3.34315 4.34315 2 6 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V17H6.5C5.67157 17 5 17.6716 5 18.5C5 19.3284 5.67157 20 6.5 20H19Z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Education
+              </h2>
+              <p class="leading-relaxed text-base">
+                Nurturing children's education, nutrition, and holistic
+                development.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-cyan-100 text-cyan-500 mb-4 mx-auto"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16.5 3C19.5376 3 22 5.5 22 9C22 16 14.5 20 12 21.5C10.0224 20.3135 4.91625 17.5626 2.8685 13L7.56619 13L8.5 11.4437L11.5 16.4437L13.5662 13H17V11H12.4338L11.5 12.5563L8.5 7.55635L6.43381 11L2.21024 10.9999C2.07418 10.3626 2 9.69615 2 9C2 5.5 4.5 3 7.5 3C9.35997 3 11 4 12 5C13 4 14.64 3 16.5 3Z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Healthcare
+              </h2>
+              <p class="leading-relaxed text-base">
+                Bringing essential healthcare directly to remote communities'
+                doorsteps.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-fuchsia-100 text-fuchsia-500 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M11 15.9339C7.33064 15.445 4.5 12.3031 4.5 8.5C4.5 4.35786 7.85786 1 12 1C16.1421 1 19.5 4.35786 19.5 8.5C19.5 12.3031 16.6694 15.445 13 15.9339V18H18V20H13V24H11V20H6V18H11V15.9339ZM12 14C15.0376 14 17.5 11.5376 17.5 8.5C17.5 5.46243 15.0376 3 12 3C8.96243 3 6.5 5.46243 6.5 8.5C6.5 11.5376 8.96243 14 12 14Z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Women Empowerment
+              </h2>
+              <p class="leading-relaxed text-base">
+                Empowering girls and women through community engagement.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-stone-100 text-stone-500 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M7 5V2C7 1.44772 7.44772 1 8 1H16C16.5523 1 17 1.44772 17 2V5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V6C2 5.44772 2.44772 5 3 5H7ZM4 15V19H20V15H4ZM11 11V13H13V11H11ZM9 3V5H15V3H9Z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Livelihood
+              </h2>
+              <p class="leading-relaxed text-base">
+                Providing in-demand skill training and job support opportunities
+                for youth.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M1.51587 7.87678C1.67997 9.82977 3.0892 11.452 5.00006 11.8875V19.0013H3.00006V21.0013H21.0001V19.0013H19.0001V11.8875C20.9109 11.452 22.3202 9.82977 22.4842 7.87678C21.9938 7.95878 21.4973 8 21.0001 8C17.186 8 13.7861 5.59592 12.5148 2H11.4853C10.214 5.59592 6.81411 8 3.00006 8C2.50278 8 2.00635 7.95878 1.51587 7.87678ZM17.0001 19.0013H7.00006V12H17.0001V19.0013Z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Empowering Grassroots
+              </h2>
+              <p class="leading-relaxed text-base">
+                Supporting community organizations to achieve sustainability.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M11.8611 2.39057C12.8495 1.73163 14.1336 1.71797 15.1358 2.35573L19.291 4.99994H20.9998C21.5521 4.99994 21.9998 5.44766 21.9998 5.99994V14.9999C21.9998 15.5522 21.5521 15.9999 20.9998 15.9999H19.4801C19.5396 16.9472 19.0933 17.9102 18.1955 18.4489L13.1021 21.505C12.4591 21.8907 11.6609 21.8817 11.0314 21.4974C10.3311 22.1167 9.2531 22.1849 8.47104 21.5704L3.33028 17.5312C2.56387 16.9291 2.37006 15.9003 2.76579 15.0847C2.28248 14.7057 2 14.1254 2 13.5109V6C2 5.44772 2.44772 5 3 5H7.94693L11.8611 2.39057ZM4.17264 13.6452L4.86467 13.0397C6.09488 11.9632 7.96042 12.0698 9.06001 13.2794L11.7622 16.2518C12.6317 17.2083 12.7903 18.6135 12.1579 19.739L17.1665 16.7339C17.4479 16.5651 17.5497 16.2276 17.4448 15.9433L13.0177 9.74551C12.769 9.39736 12.3264 9.24598 11.9166 9.36892L9.43135 10.1145C8.37425 10.4316 7.22838 10.1427 6.44799 9.36235L6.15522 9.06958C5.58721 8.50157 5.44032 7.69318 5.67935 7H4V13.5109L4.17264 13.6452ZM14.0621 4.04306C13.728 3.83047 13.3 3.83502 12.9705 4.05467L7.56943 7.65537L7.8622 7.94814C8.12233 8.20827 8.50429 8.30456 8.85666 8.19885L11.3419 7.45327C12.5713 7.08445 13.8992 7.53859 14.6452 8.58303L18.5144 13.9999H19.9998V6.99994H19.291C18.9106 6.99994 18.5381 6.89148 18.2172 6.68727L14.0621 4.04306ZM6.18168 14.5448L4.56593 15.9586L9.70669 19.9978L10.4106 18.7659C10.6256 18.3897 10.5738 17.9178 10.2823 17.5971L7.58013 14.6247C7.2136 14.2215 6.59175 14.186 6.18168 14.5448Z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                Disaster Response
+              </h2>
+              <p class="leading-relaxed text-base">
+                Coordinating rapid response and recovery efforts for disaster
+                victims.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- images -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex w-full mb-20 flex-wrap">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4"
+          >
+            The Visual Narrative of Our Mission
+          </h1>
+          <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">
+            Explore the transformative work of Samridhi Foundation. Our photos
+            capture moments of change, hope, and progress from our community
+            events and outreach programs. Each image tells a unique story of
+            individuals and communities coming together to make a difference.
+            Witness the smiles, hard work, and positive outcomes that define our
+            mission of empowerment and transformation.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <img
+                alt="gallery"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+                src="https://dummyimage.com/600x360"
+              />
+              <div
+                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+              >
+                <h2
+                  class="tracking-widest text-sm title-font font-medium text-emerald-500 mb-1"
+                >
+                  THE SUBTITLE
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  Shooting Stars
+                </h1>
+                <p class="leading-relaxed">
+                  Photo booth fam kinfolk cold-pressed sriracha leggings
+                  jianbing microdosing tousled waistcoat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <img
+                alt="gallery"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+                src="https://dummyimage.com/601x361"
+              />
+              <div
+                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+              >
+                <h2
+                  class="tracking-widest text-sm title-font font-medium text-emerald-500 mb-1"
+                >
+                  THE SUBTITLE
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  The Catalyzer
+                </h1>
+                <p class="leading-relaxed">
+                  Photo booth fam kinfolk cold-pressed sriracha leggings
+                  jianbing microdosing tousled waistcoat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <img
+                alt="gallery"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+                src="https://dummyimage.com/603x363"
+              />
+              <div
+                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+              >
+                <h2
+                  class="tracking-widest text-sm title-font font-medium text-emerald-500 mb-1"
+                >
+                  THE SUBTITLE
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  The 400 Blows
+                </h1>
+                <p class="leading-relaxed">
+                  Photo booth fam kinfolk cold-pressed sriracha leggings
+                  jianbing microdosing tousled waistcoat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <img
+                alt="gallery"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+                src="https://dummyimage.com/602x362"
+              />
+              <div
+                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+              >
+                <h2
+                  class="tracking-widest text-sm title-font font-medium text-emerald-500 mb-1"
+                >
+                  THE SUBTITLE
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  Neptune
+                </h1>
+                <p class="leading-relaxed">
+                  Photo booth fam kinfolk cold-pressed sriracha leggings
+                  jianbing microdosing tousled waistcoat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <img
+                alt="gallery"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+                src="https://dummyimage.com/605x365"
+              />
+              <div
+                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+              >
+                <h2
+                  class="tracking-widest text-sm title-font font-medium text-emerald-500 mb-1"
+                >
+                  THE SUBTITLE
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  Holden Caulfield
+                </h1>
+                <p class="leading-relaxed">
+                  Photo booth fam kinfolk cold-pressed sriracha leggings
+                  jianbing microdosing tousled waistcoat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <img
+                alt="gallery"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+                src="https://dummyimage.com/606x366"
+              />
+              <div
+                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+              >
+                <h2
+                  class="tracking-widest text-sm title-font font-medium text-emerald-500 mb-1"
+                >
+                  THE SUBTITLE
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  Alper Kamu
+                </h1>
+                <p class="leading-relaxed">
+                  Photo booth fam kinfolk cold-pressed sriracha leggings
+                  jianbing microdosing tousled waistcoat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <section id="newsletterid" class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+        <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+          <h1 class="title-font font-medium text-3xl text-gray-900">
+            Stay Updated
+          </h1>
+          <p class="leading-relaxed mt-4">
+            Sign up for our newsletter to receive the latest news, updates, and
+            stories from Samridhi Foundation. Stay informed about our
+            initiatives and how you can get involved.
+          </p>
+        </div>
+        <div
+          class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0"
+        >
+          <h2 class="text-gray-900 text-lg font-medium title-font mb-5">
+            Sign Up
+          </h2>
+          <div class="relative mb-4">
+            <label for="full-name" class="leading-7 text-sm text-gray-600"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              class="w-full bg-white rounded border border-gray-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            />
+          </div>
+          <div class="relative mb-4">
+            <label for="email" class="leading-7 text-sm text-gray-600"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full bg-white rounded border border-gray-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            />
+          </div>
+          <button
+            class="text-white bg-emerald-500 border-0 py-2 px-8 focus:outline-none hover:bg-emerald-600 rounded text-lg"
+          >
+            Submit
+          </button>
+          <p class="text-xs text-gray-500 mt-3">
+            Be the change. Get involved with Samridhi Foundation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="text-gray-600 body-font">
+      <div
+        class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"
+      >
+        <div
+          class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left"
+        >
+          <a
+            class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+          >
+            <img src="img/logoorg.png" alt="Logo" class="w-12 h-12" />
+            <span class="ml-3 text-xl">Samridhi Foundation</span>
+          </a>
+          <p class="mt-2 text-sm text-gray-500">
+            Empowering Communities, <br />
+            Building a Brighter Future
+          </p>
+        </div>
+        <div
+          class="flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-left"
+        >
+          <div class="lg:w-1/3 md:w-1/2 w-1/2 px-4 text-left">
+            <h2
+              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+            >
+              NAVIGATION
+            </h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="about.html"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="#"
+                  >Privacy Policy</a
+                >
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 w-1/2 px-4">
+            <h2
+              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+            >
+              OUR WORK
+            </h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Education</a>
+              </li>
+              <li><a class="text-gray-600 hover:text-gray-800">Health</a></li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Livelihood</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800"
+                  >Disaster Response</a
+                >
+              </li>
+
+              <li>
+                <a class="text-gray-600 hover:text-gray-800"
+                  >Women Empowerment</a
+                >
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 w-1/2 px-4">
+            <h2
+              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+            >
+              GET INVOLVED
+            </h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="#"
+                  >Volunteer</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="#"
+                  >Careers</a
+                >
+              </li>
+
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="#"
+                  >Individual Support</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="#"
+                  >Corporate Partnerships</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="#"
+                  >School Partnerships</a
+                >
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-100">
+        <div
+          class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row justify-center"
+        >
+          <p class="text-gray-500 text-sm text-center sm:text-left">
+            © 2024 Samridhi Foundation
+          </p>
+          <span
+            class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-center"
+          >
+            <a class="ml-3 text-gray-500" href="#">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-6 h-6"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500" href="#">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-6 h-6"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500" href="#">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-6 h-6"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500" href="#">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-6 h-6"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+
+            <a class="ml-3 text-gray-500" href="#">
+              <svg
+                class="w-6 h-6 text-slate-500"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
+                />
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <style>
+      .mobile-menu-button {
+        display: none;
+      }
+      @media (max-width: 768px) {
+        .container1 {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .mobile-menu-button {
+          display: block;
+        }
+        .mobile-menu {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          padding-top: 1rem; /* Adds space to avoid overlap */
+        }
+        .mobile-menu.open {
+          display: flex;
+        }
+        .mobile-menu a {
+          text-align: left;
+          padding-left: 1rem; /* Ensures left alignment and spacing */
+          padding-top: 0.5rem; /* Adds space between menu items */
+          padding-bottom: 0.5rem; /* Adds space between menu items */
+        }
+      }
+    </style>
+
+    <script>
+      function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.querySelector(".mobile-menu-button");
+        const mobileMenu = document.querySelector(".mobile-menu");
+
+        mobileMenuButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("open");
+        });
       });
-    });
-</script>
-
+    </script>
+  </body>
 </html>
